@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>日历小程序</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="calendar-app">
+    <header class="toolbar">
+      <button id="prevMonth" aria-label="上个月">◀</button>
+      <h1 id="monthLabel"></h1>
+      <button id="nextMonth" aria-label="下个月">▶</button>
+    </header>
+
+    <section class="week-header" aria-hidden="true">
+      <span>日</span><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span>
+    </section>
+
+    <section id="calendarGrid" class="grid" role="grid" aria-label="月历"></section>
+
+    <footer class="actions">
+      <button id="todayBtn">回到今天</button>
+      <p id="selectedDate">已选择：未选择日期</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
